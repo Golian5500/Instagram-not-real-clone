@@ -39,7 +39,7 @@ function liked(number) {
         localStorage.setItem(storageKey, 'false');
     } else {
         likeText.innerHTML = String(likes + 1);
-        likeImage.style.filter = "invert(60%) sepia(100%) hue-rotate(190deg) saturate(400%)";
+        likeImage.style.filter = "invert(60%) sepia(100%) hue-rotate(190deg) saturate(5000%)";
         localStorage.setItem(storageKey, 'true');
     }
 }
@@ -55,7 +55,7 @@ document.querySelectorAll('[id^="post"]').forEach(post => {
         const likeImage = post.querySelector('.interactions .likes img');
         if (likeText && likeImage) {
             likeText.innerHTML = String(Number(likeText.innerHTML) + 1);
-            likeImage.style.filter = "invert(60%) sepia(100%) hue-rotate(190deg) saturate(400%)";
+            likeImage.style.filter = "invert(60%) sepia(100%) hue-rotate(190deg) saturate(5000%)";
         }
     }
 });
