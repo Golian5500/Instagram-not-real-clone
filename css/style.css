@@ -238,21 +238,27 @@ header {
     gap: 20px;
 }
 
-.interactions-container img {
+.interactions-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interactions-numbers img {
     width: 35px;
     height: 35px;
     filter: invert(100%) brightness(200%);
 }
 
-.interactions-container img:first-child:hover {
+.likes img:hover {
     filter: invert(60%) sepia(100%) hue-rotate(190deg) saturate(400%);
 }
 
-.interactions-container img:nth-child(2):hover {
-    filter: brightness(300%) invert(45%) sepia(60%) hue-rotate(80deg) saturate(200%);
+.comments img:hover {
+    filter: invert(45%) sepia(60%) hue-rotate(180deg) saturate(100%);
 }
 
-.interactions-container img:nth-child(3):hover {
+.shares img:hover {
     filter: invert(50%) sepia(100%) saturate(20%) hue-rotate(0deg) brightness(110%);
 }
 
